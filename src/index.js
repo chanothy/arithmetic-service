@@ -13,4 +13,16 @@ app.get('/add/:n/:m', (req, res) => { // any http request with url /add/[number]
     res.json(Number(req.params.n) + Number(req.params.m));
 });
 
+app.get('/sub/:n/:m', (req, res) => { // any http request with url /add/[number]/[number]
+    res.json(Number(req.params.n) - Number(req.params.m));
+});
+
+app.get('/div/:n/:m', (req, res) => { // any http request with url /add/[number]/[number]
+    res.json(Number(req.params.n) / Number(req.params.m));
+});
+
+app.get('/mult/:n/:m', (req, res) => { // any http request with url /add/[number]/[number]
+    res.json(Number(req.params.n) * Number(req.params.m));
+});
+
 app.listen(port);
