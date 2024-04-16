@@ -21,5 +21,5 @@ jobs:
               run: |
                 docker login --username practicum15timchan --password ${{secrets.AZURE_CONTAINER_REGISTRY}} practicum15timchan.azurecr.io
                 docker tag ghcr.io/chanothy/arithmetic-service:latest   practicum15timchan.azurecr.io/arithmetic-service:latest
-                docker push practicum15.azurecr.io/arithmetic-service:latest            
+                docker push practicum15timchan.azurecr.io/arithmetic-service:latest            
 
